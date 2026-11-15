@@ -6,7 +6,7 @@ const T = {
   es: {
     title: "Adivina mi número",
     h1a: "Adivina mi", h1b: "número",
-    lede: "Armé tres bots y los puse a competir por encontrar el mismo número secreto. Uno prueba uno por uno, otro dispara al azar y el último siempre pregunta por la mitad. Mira cuánto tarda cada uno.",
+    lede: "Genere tres bots y los puse a competir por encontrar el mismo número secreto. Uno prueba uno por uno, otro dispara al azar y el último siempre pregunta por la mitad.",
     s1: "números posibles", s2: "intentos como máximo para el bot binario", s3: "intentos si fueran mil millones",
     tab1: "01 / Carrera", tab2: "02 / Adivina tú", tab3: "03 / Adivina el bot",
     upTo: "Hasta", secretNum: "Número secreto", ph1: "al azar", go1: "Correr carrera",
@@ -36,7 +36,7 @@ const T = {
   en: {
     title: "Guess my number",
     h1a: "Guess my", h1b: "number",
-    lede: "I built three bots and made them race to find the same secret number. One tries every number in order, one guesses blindly, and one always asks about the middle. Watch how long each one takes.",
+    lede: "I built three bots and made them race to find the same secret number. One tries every number in order, one guesses blindly, and one always asks about the middle.",
     s1: "possible numbers", s2: "guesses at most for the binary bot", s3: "guesses if it were a billion",
     tab1: "01 / Race", tab2: "02 / You guess", tab3: "03 / Bot guesses",
     upTo: "Up to", secretNum: "Secret number", ph1: "random", go1: "Run the race",
