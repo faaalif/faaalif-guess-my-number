@@ -31,7 +31,7 @@ const T = {
     secretA: "Número secreto", secretB: "en el rango 1 a {n}",
     botLin: "Bot lineal", botRnd: "Bot al azar", botBin: "Bot binario", guesses: "intentos",
     axisY: "intentos", legLin: "lineal", legRnd: "al azar", legBin: "binaria",
-    madeBy: "hecho por", empty: ""
+ 
   },
   en: {
     title: "Guess my number",
@@ -61,7 +61,7 @@ const T = {
     secretA: "Secret number", secretB: "in the range 1 to {n}",
     botLin: "Linear bot", botRnd: "Random bot", botBin: "Binary bot", guesses: "guesses",
     axisY: "guesses", legLin: "linear", legRnd: "random", legBin: "binary",
-    madeBy: "made by", empty: ""
+
   }
 };
 
