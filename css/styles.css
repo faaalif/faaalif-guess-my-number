@@ -71,8 +71,7 @@ td{padding:10px 8px;border-bottom:1px solid var(--line);font:400 .9rem "JetBrain
 .tag.lin{background:none;color:var(--lin)}.tag.azr{background:none;color:var(--azr)}.tag.bin{background:none;color:var(--bin)}
 
 .hide{display:none}
-footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);color:var(--mut);font:500 .8rem "JetBrains Mono",ui-monospace,monospace;display:flex;align-items:center;gap:8px}
-.sig{font:600 2rem/1 Caveat,cursive;color:var(--bin);display:inline-block;transform:rotate(-4deg)}
+
 
 @media (max-width:640px){
   .bot{grid-template-columns:1fr;gap:4px}
