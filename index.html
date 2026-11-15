@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guess my number</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<main>
+
+<div class="top">
+  <span class="brand">guess/my/number</span>
+  <div class="lang" role="group" aria-label="Language">
+    <button data-lang="es">ES</button>
+    <button data-lang="en">EN</button>
+  </div>
+</div>
+
+<header class="hero">
+  <h1><span data-i18n="h1a"></span> <mark data-i18n="h1b"></mark></h1>
+  <p class="lede" data-i18n="lede"></p>
+  <div class="stats">
+    <div><b>1,000,000</b><span data-i18n="s1"></span></div>
+    <div class="hot"><b>20</b><span data-i18n="s2"></span></div>
+    <div><b>30</b><span data-i18n="s3"></span></div>
+  </div>
+</header>
+
+<nav class="tabs" role="tablist">
+  <button class="on" role="tab" data-tab="t1" data-i18n="tab1"></button>
+  <button role="tab" data-tab="t2" data-i18n="tab2"></button>
+  <button role="tab" data-tab="t3" data-i18n="tab3"></button>
+</nav>
+
+<section id="t1">
+  <div class="panel">
+    <div class="controls">
+      <label><span data-i18n="upTo"></span>
+        <select id="n1"><option value="100">100</option><option value="1000">1,000</option><option value="10000">10,000</option><option value="1000000" selected>1,000,000</option></select>
+      </label>
+      <label><span data-i18n="secretNum"></span>
+        <input id="s1" type="number" min="1" data-ph="ph1">
+      </label>
+      <button class="btn" id="go1" data-i18n="go1"></button>
+    </div>
+    <div id="out1" class="hint" data-k="raceHint" data-p="{}"></div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-head">
+      <div>
+        <h2 data-i18n="chartTitle"></h2>
+        <p class="hint" data-i18n="chartHint"></p>
+      </div>
+      <button class="btn ghost" id="go2" data-i18n="calc"></button>
+    </div>
+    <div id="chart" class="chart"></div>
+    <div class="scroll">
+      <table id="tab">
+        <thead><tr>
+          <th data-i18n="thN"></th><th data-i18n="thLin"></th><th data-i18n="thRnd"></th><th data-i18n="thBin"></th><th data-i18n="thWorst"></th>
+        </tr></thead>
+        <tbody><tr><td colspan="5" class="hint" data-k="tablePress" data-p="{}"></td></tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="trio">
+    <article><span class="tag lin" data-i18n="trioLin"></span><h3>O(n)</h3><p data-i18n="trioLinP"></p></article>
+    <article><span class="tag azr" data-i18n="trioRnd"></span><h3 data-i18n="trioRndO"></h3><p data-i18n="trioRndP"></p></article>
+    <article><span class="tag bin" data-i18n="trioBin"></span><h3>O(log n)</h3><p data-i18n="trioBinP"></p></article>
+  </div>
+</section>
+
+<section id="t2" class="hide">
+  <div class="panel">
+    <div class="controls">
+      <label><span data-i18n="upTo"></span>
+        <select id="n2"><option value="100">100</option><option value="1000" selected>1,000</option><option value="10000">10,000</option><option value="1000000">1,000,000</option></select>
+      </label>
+      <button class="btn" id="new2" data-i18n="newGame"></button>
+    </div>
+    <p class="big" id="q2"></p>
+    <div class="controls">
+      <input id="g2" type="number" min="1" data-ph="ph2">
+      <button class="btn ghost" id="b2" data-i18n="guess"></button>
+    </div>
+    <p class="msg" id="m2"></p>
+    <p class="hint" id="i2"></p>
+  </div>
+</section>
+
+<section id="t3" class="hide">
+  <div class="panel">
+    <div class="controls">
+      <label><span data-i18n="thinkOf"></span>
+        <select id="n3"><option value="100">100</option><option value="1000" selected>1,000</option><option value="1000000">1,000,000</option></select>
+      </label>
+      <button class="btn" id="new3" data-i18n="start"></button>
+    </div>
+    <p class="big" id="q3" data-k="q3start" data-p="{}"></p>
+    <div class="controls" id="btn3">
+      <button class="btn ghost" data-a="menor" data-i18n="smaller"></button>
+      <button class="btn ghost" data-a="ok" data-i18n="yes"></button>
+      <button class="btn ghost" data-a="mayor" data-i18n="bigger"></button>
+    </div>
+    <p class="hint" id="i3"></p>
+  </div>
+</section>
+
+<footer><span data-i18n="madeBy"></span> <span class="sig">Fali</span></footer>
+
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
