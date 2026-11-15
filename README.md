@@ -34,6 +34,4 @@ guess-my-number/
 
 No install needed. Open `index.html` in your browser.
 
-## Live version
-
-https://faaalif.github.io/guess-my-number/
+https://faaalif.github.io/faaalif-guess-my-number/
